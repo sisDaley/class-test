@@ -1,0 +1,35 @@
+
+/*GRID AND FLEX*/
+
+main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 2rem;
+}
+
+.grid button {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+section {
+  grid-column: 1/4;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons img {
+  width: 25%;
+}
