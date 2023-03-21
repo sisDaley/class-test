@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | W02 | Rafting Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/course.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="../images/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01">W1</a></span>
+      <span class="active"><a
+          href="https://byui-cse.github.io/wdd130-ww-course/week02">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07">W7</a></span>
+      <span><a href="https://byui.instructure.com/calendar" target="_blank">I-Learn</a></span>
+    </nav>
+    <h2>W02 Rafting Project: Site Plan</h2>
+    <h3>Overview</h3>
+    <p>In this assignment you will create a site plan for the course project, a rafting site. The
+      site plan will be an HTML document with a supporting CSS file and will be located in a folder
+      that will contain all of your future work on the rafting project. This site plan will provide
+      the blueprint and guides from which to design and development the project.</p>
+    <h3>Project Description</h3>
+    <p>📑 <a href="../week07/rafting-site-description.html" target="_blank">The Whitewater Rafting
+        Site Project Description</a>
+
+    </p>
+    <h3>Instructions</h3>
+    <h4 class="step">Rafting Project Folder and File Setup</h4>
+    <ol>
+      <li>In VS Code, be sure you have the wdd130 directory open and <strong>add</strong> a folder
+        named
+        "<strong>wwr</strong>" (This folder name stands for white water rafting). This folder will
+        contain the rafting website project and you will add to this folder whenever working on the
+        rafting project
+        throughout the course.
+        <ul>
+          <li>Click the <strong>New Folder</strong> icon.
+
+            <figure>
+              <img src="../images/w02/new-folder.png" alt="VS Code new folder icon">
+              <figcaption>Figure 1: Add new folder icon in the Explorer panel</figcaption>
+            </figure>
+          </li>
+          <li>Name the new folder "<strong>wwr</strong>".
+            <figure>
+              <img src="../images/w02/wwr-folder.png" alt="White white rafting folder in wdd130">
+              <figure>Figure 2: Name the new folder "wwr"</figure>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Add</strong> a new file to the <strong>wwr</strong> folder named
+        "<strong>site-plan-rafting.html</strong>". This will be the site plan.
+        <ul>
+          <li>Within the wwr folder, click the <strong>New File</strong> icon.
+            <figure>
+              <img src="../images/w02/new-file.png" alt="Add a New File Icon">
+              <figcaption>Figure 3: Add a new file</figcaption>
+            </figure>
+          </li>
+          <li>Name the new file "<strong>site-plan-rafting.html</strong>"
+            <figure>
+              <img src="../images/w02/siteplan-file.png" alt="Name the HTML file">
+              <figcaption>Figure 4: Name the file.</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </li>
+      <li>Within the <strong>wwr</strong> folder, <strong>add</strong> a folder named
+        "<strong>styles</strong>". This folder will contain the CSS to support the site plan
+        document.
+        Remember to click the <strong>New Folder</strong> icon making sure that you are in the wwr
+        folder.
+        <figure>
+          <img src="../images/w02/styles-folder.png" alt="Adding the styles folder to wwr.">
+          <figcaption>Figure 5: Adding the styles folder to the wwr rafting project foler.
+          </figcaption>
+        </figure>
+      </li>
+      <li><strong>Add</strong> a new file to the <strong>styles</strong> folder named
+        "<strong>site-plan-rafting.css</strong>"". Make sure you are in the styles folder when you
+        click the add new file button.
+        <figure>
+          <img src="../images/w02/siteplan-css.png" alt="Add a CSS file">
+          <figcaption>Figure 6: Add a new CSS file</figcaption>
+        </figure>
+      </li>
+      <li>Within the <strong>wwr</strong> folder, <strong>add</strong> a folder named
+        "<strong>images</strong>". This folder will contain any images that you used on the rafting
+        site.
+        <figure>
+          <img src="../images/w02/finished-wwr-folder.png" alt="Finished Folder Structure">
+          <figcaption>Figure 7: Finished folder structure</figcaption>
+        </figure>
+      </li>
+    </ol>
+    <h4 class="step">Write the HTML</h4>
+    <ol>
+      <li>Open up the <strong>site-plan-rafting.html</strong> file and begin the document by writing
+        the <a href="../week07/dev-standards.html" target="_blank">course standards based</a>
+        HTML markup
+        required
+        in this class for the HTML document and the <code>&lt;head&gt;</code> section.
+        <ul class="check">
+          <li>Document type definition for HTML5.</li>
+          <li><code>&lt;html&gt;</code> container with a language attribute.</li>
+          <li><code>&lt;head&gt;</code> section with the following elements:
+            <ul class="check">
+              <li>meta charset</li>
+              <li>meta viewport</li>
+              <li>title</li>
+              <li>meta description</li>
+              <li>meta author</li>
+              <li>external CSS file reference to styles.css in the styles folder</li>
+            </ul>
+          </li>
+
+        </ul>
+        <details class="unselectable">
+          <summary>Check Your Work</summary>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;
+    &lt;title&gt;Rafting Site Plan | Xavier Rodriquez&lt;/title&gt;
+    &lt;meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project."&gt;
+    &lt;meta name="author" content="Xavier Rodriquez"&gt;
+    &lt;link rel="stylesheet" href="styles/site-plan-rafting.css"&gt;
+  &lt;/head&gt;
+    ...
+&lt;/html></code></pre>
+        </details>
+      </li>
+      <li>The <code>&lt;body&gt;</code> section contains the following elements in order:
+        <ul class="check">
+          <li><code>&lt;header&gt;</code>. Within the header section, include the following:
+            <ul>
+              <figure>
+              <img src="images/head.png" alt="head section">
+              <figcaption>Example of the head section</figcaption>
+              </figure>
+              <li>an <code>&lt;h1&gt;</code> element that contains the title of the document.</li>
+              <li>a <code>&lt;div&gt;</code> element that contains your own name as the author.</li>
+            </ul>
+            <details class="unselectable">
+              <summary>Check Your Work</summary>
+              <pre><code class="html">&lt;header&gt;
+  &lt;h1&gt;Rafting Site Plan&lt;/h1&gt;
+  &lt;div&gt;Xavier Rodriquez&lt;/div&gt;
+&lt;/header></code></pre>
+            </details>
+          </li>
+          <li><code>&lt;main&gt;</code> and include the following elements within the main section.
+            These elements outline the site plan content.
+            <div class="callout info">Remember that by definition, an HTML "element" includes an
+              opening and closing tag for non-void HTML elements.</div>
+            <ul>
+              <figure>
+                <img src="images/main.png" alt="overview">
+                <img src="images/wireframe.png" alt="wireframe">
+                <figcaption>example of main section</figcaption>
+              </figure>
+              <li><code>&lt;h2&gt;</code> element with "<strong>Overview</strong>" as the text
+                content.</li>
+              <li><code>&lt;h3&gt;</code> element with "<strong>Purpose</strong>"" as the text
+                content.</li>
+              <li><code>&lt;p&gt;</code> element that will contain the purpose text.</li>
+              <li><code>&lt;h3&gt;</code> element with "<strong>Audience</strong>"" as the text
+                content.</li>
+              <li><code>&lt;p&gt;</code> element that will contain the target audience text.</li>
+              <li><code>&lt;h2&gt;</code> element "<strong>Branding</strong>"</li>
+              <li><code>&lt;h3&gt;</code> element "<strong>Website Logo</strong>"</li>
+              <li><code>&lt;img&gt;</code> element that contains these placeholders for the
+                <code>src</code> and <code>alt</code> attributes
+                <pre><code class="html">&lt;img src="images/logo.png" alt="Rafting Site Logo"&gt;</code></pre>
+
+              </li>
+              <li><code>&lt;h2&gt;</code> element "<strong>Style Guide</strong>"</li>
+              <li><code>&lt;h3&gt;</code> element "<strong>Color Palette</strong>"</li>
+              <li><code>&lt;p&gt;</code> element</li>
+              <li><code>&lt;h3&gt;</code> element "<strong>Typography</strong>"</li>
+              <li><code>&lt;h4&gt;</code> element "<strong>Headings Example Font</strong>"</li>
+              <li><code>&lt;h4&gt;</code> element "<strong>Normal Text/Paragraph Example
+                  Font</strong>"
+              </li>
+              <li><code>&lt;p&gt;</code> element</li>
+              <li><code>&lt;h4&gt;</code> element "<strong>Colored Callout Example Font</strong>"
+              </li>
+              <li><code>&lt;p&gt;</code> element</li>
+              <li><code>&lt;h3&gt;</code> element "<strong>Navigation</strong>"</li>
+              <li><code>&lt;nav&gt;</code> element with four (4) children <code>&lt;a&gt;</code>
+                anchor
+                tags as shown here with placeholders:
+                <pre>
+              <code class="html">&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About Us&lt;/a&gt;
+  &lt;a href="#"&gt;Trips&lt;/a&gt;
+  &lt;a href="#"&gt;Contact Us&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+              </li>
+              <li><code>&lt;h2&gt;</code> element "<strong>Wireframes</strong>"</li>
+              <li><code>&lt;h3&gt;</code> element "<strong>About Us Page Wireframe</strong>"</li>
+              <li><code>&lt;img&gt;</code> element with the <code>src</code>, <code>alt</code>, and
+                <code>width</code> attributes and values set as shown here:
+                <pre><code class="html">&lt;img src="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png" alt="About Us Page Wireframe Design" width="700"&gt;</code></pre>
+              </li>
+            </ul>
+            <details>
+              <summary>Check Your Work (main)</summary>
+              <pre><code class="html">&lt;main&gt;
+  &lt;h2&gt;Overview&lt;/h2&gt;
+
+  &lt;h3&gt;Purpose&lt;/h3&gt;
+  &lt;p&gt;[to be filled out]&lt;/p&gt;
+  &lt;h3&gt;Audience&lt;/h3&gt;
+  &lt;p&gt;[to be filled out]&lt;/p&gt;
+
+  &lt;h2&gt;Branding&lt;/h2&gt;
+
+  &lt;h3&gt;Website Logo&lt;/h3&gt;
+  &lt;img src="images/logo.png" alt="Rafting Site Logo"&gt;
+
+  &lt;h2&gt;Style Guide&lt;/h2&gt;
+
+  &lt;h3&gt;Color Palette&lt;/h3&gt;
+  &lt;p&gt;[to be filled out]&lt;/p&gt;
+  &lt;h3&gt;Typography&lt;/h3&gt;
+  &lt;h4&gt;Headings Example Font&lt;/h4&gt;
+  &lt;h4&gt;Normal Text/Paragraph Example Font&lt;/h4&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, inventore.&lt;/p&gt;
+  &lt;h4&gt;Colored Callout Example Font&lt;/h4&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, inventore.&lt;/p&gt;
+  &lt;h3&gt;Navigation&lt;/h3&gt;
+  &lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;Page 2&lt;/a&gt;
+    &lt;a href="#"&gt;Contact Us&lt;/a&gt;
+  &lt;/nav&gt;
+
+  &lt;h2&gt;Wireframes&lt;/h2&gt;
+  &lt;h3&gt;Home Page Wireframe&lt;/h3&gt;
+  &lt;img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="Required Home Page Wireframe Design"&gt;
+  &lt;h3&gt;Page 2 Wireframee&lt;/h3&gt;
+&lt;/main></code></pre>
+            </details>
+          </li>
+          <li><code>&lt;footer&gt;</code>
+            <figure>
+              <img src="images/footer.png" alt="footer example">
+              <figcaption>Example of footer</figcaption>
+            </figure>
+            <ul>
+              <li>Include an <code>&lt;p&gt;</code> element with a copyright symbol, year, document
+                title, your name, and the course as text content.</li>
+            </ul>
+            <details>
+              <summary>Check Your Work (footer)</summary>
+              <pre><code class="html">&lt;footer&gt;
+  &lt;p&gt;©️2024 🌴 Rafting Site Document 🌴 Xavier Rodriquez 🌴 WDD 130&lt;/p&gt;
+&lt;/footer></code></pre>
+            </details>
+          </li>
+        </ul>
+
+      </li>
+      <li>Fill out the <code>&lt;main&gt;</code> section empty paragraphs or other elements with
+        appropriate content.
+        <ul class="check">
+          <li><strong>Purpose</strong>: Imagine that you are the owner of the rafting business and
+            have decided that it is time for you to have an online presence. What is the purpose?
+            You might need to do a little research if you are unfamiliar with water rafting
+            companies.</li>
+          <li><strong>Audience</strong>: Write a statement specifically identifying your target
+            audience for a water rafting website. Review the example questions posed about target
+            audiences from the <a href="prepare-site-planning-doc.html">learning activity</a> on
+            site plan sections. Include three (3) scenario questions. Include both the scenario
+            questions and answers to those questions.</li>
+          <li><strong>Logo</strong>: Choose or create a logo for your website. Here are some example
+            logos that you can use freely - <a href="../resources/wwr-logos-repo.html"
+              target="_blank">Rafting Logos</a>. You can adjust your <code>&lt;h1&gt;</code> content
+            to match the name of the rafting company that you choose in this document. Remember to
+            save the logo to the <code>images</code> folder within your <code>wwr</code> folder.
+            <div class="callout info">
+              If you choose a logo from those provided in the linked document, you can right click
+              on the image and <strong>Save image as...</strong> a file to the
+              <strong>images</strong> folder within your <strong>wwr</strong> folder.
+            </div>
+          </li>
+          <li><strong>Color Palette</strong>: Using the <a href="https://coolors.co/"
+              target="_blank">coolors.co</a> tool, choose a color scheme for your rafting site,
+            keeping your site purpose and audience in mind. Start by thinking of a color you like or
+            think will work well for a rafting site.<br>
+            Once you have built your palette, note that at the bottom of each color column there is
+            a six digit hex code. This is what is known as a hexadecimal color code (base 16 or 0 to
+            F) and is usually preceded by a "#". Copy that code for the 3–4 colors you would like to
+            use into the site plan document.<br>
+            <strong>List</strong> the colors you have selected in the site plan paragraph using a
+            structure of your choice below the color palette heading. Include the 'name' of the
+            color (given below) and the hexadecimal color code. These are the four (4) labeled
+            'names' that we will use in the CSS.
+            <ul>
+              <li><code class="css">primary-color</code></li>
+              <li><code class="css">secondary-color</code></li>
+              <li><code class="css">accent1-color</code></li>
+              <li><code class="css">accent2-color</code></li>
+            </ul>
+            <div class="callout info">Do not feel like you will be stuck with these colors. Changes
+              can be made to the site plan after</div>
+            You should save your chosen palette URL from coolors.co in case you need to make any
+            changes later. Copy the URL of your palette. (it might look something like this:
+            https://coolors.co/b7d3f2-afafdc-8a84e2-84afe6-79beee) and paste it into this same
+            paragraph area in the site plan.
+            <pre><code class="html">Palette URL: &lt;a href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c" target="_blank"&gt;https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c&lt;/a&gt;</code></pre>
+            <div class="callout info">Notice that when working with links in HTML the destination of
+              the link goes in the src attribute. Then the part that is displayed to select goes
+              inside of the <code>&lt;a&gt;</code> element. Usually those will be different,
+              however, in this case we are going to display the URL to your color scheme on
+              coolors.co.</div>
+          </li>
+          <li><strong>Typography</strong>:
+            <p>Using the <a href="https://fonts.google.com">Google Fonts API</a>, choose one or two
+              fonts to use for the rafting site and record the names of the fonts and the category
+              of font (serif, sans-serif, display, handwriting, or monospace) in the site plan under
+              the appropriate heading provide for headings, paragraphs, and the callout box.</p>
+            <div class="callout info">Do you remember how to work with fonts from the <a
+                href="prepare-site-planning-doc.html" target="_blank">Website Planning Document</a>
+              learning activity? Here is link to the tutorial on working with fonts: <a
+                href="https://byui-cit.github.io/learning-modules/modules/css/css-fonts/prepare1/">CSS
+                Fonts</a>.</div>
+          </li>
+          <li><strong>Wireframes</strong>: You do not need to change anything in this section. This
+            is an example wireframe for you to study. The given wireframe in this assignment will be
+            used to develop the home page of the rafting site in a future week. In addition, the
+            "About Us" wireframe will be provided when you are assigned to build that page. You will
+            have the chance to design your own wireframe for the other pages.</li>
+        </ul>
+
+      </li>
+    </ol>
+    <h4 class="step">Write the CSS</h4>
+    <ol>
+      <li>Open up your <strong>site-plan-rafting.css</strong> file.</li>
+      <li>Add an <code>@import</code> reference from the Google Fonts API to use the font(s) you
+        have
+        selected.
+        <details>
+          <summary>Example (@import CSS statement)</summary>
+          <pre><code class="css">@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');</code></pre>
+        </details>
+
+
+      </li>
+      <li>Next, define <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+          target="_blank">CSS variables</a> in the document <code class="css">:root</code>
+        pseudo-class selector. In this rule define CSS variables for the following components.
+        <ul class="check">
+          <li>primary color</li>
+          <li>secondary color</li>
+          <li>accent color</li>
+          <li>additional accent color</li>
+          <li>heading font</li>
+          <li>paragraph or default font</li>
+          <li>navigation background color</li>
+          <li>navigation link color</li>
+          <li>navigation hover link color</li>
+          <li>navigation hover background color</li>
+        </ul>
+        <details>
+          <summary>Example (CSS Variables)</summary>
+          <pre><code class="css">:root {
+  --primary-color: #XXXXXX;
+  --secondary-color: #XXXXXX;
+  --accent1-color: #XXXXXX;
+  --accent2-color: #XXXXXX;
+
+  --heading-font: '______', serif;
+  --paragraph-font: '______', serif;
+
+  --nav-background-color: #XXXXXX;
+  --nav-link-color: #XXXXXX;
+  --nav-hover-link-color: #XXXXXX;
+  --nav-hover-background-color: #XXXXXX;
+}</code></pre>
+        </details>
+        <div class="callout info">You will use your selected color schema and font family choices in
+          your site plan. The following steps help you do that using these CSS variables.</div>
+      </li>
+      <li>Write a <strong>CSS rule</strong> for the <code>body</code> of the site plan document to:
+        <ul class="check">
+          <li>set the default <code>font-family</code> to equal the <code>paragraph-font</code> CSS
+            variable value.<br> You will need to use the <code class="css">var()</code> function to
+            access the CSS variable.</li>
+          <li>limit the width (<code>max-width</code>) of the document output to the screen to
+            <code>960
+            pixels</code>, and </li>
+          <li>set the <code>padding</code> around the document to <code>20 pixels</code>.</li>
+        </ul>
+        <details>
+          <summary>Example (body selector rule)</summary>
+          <pre>
+        <code class="css">body {
+  f______: var(--paragraph-font);
+  m______: ______;
+  p______: ______;
+}</code></pre>
+        </details>
+      </li>
+      <li>Group all the built-in headings (h1 - h6) using a grouping selector. Set the group's
+        <strong>font-family</strong> to the CSS variable established in the document root for
+        <strong>heading-font</strong> and give the headings the color of your choice.
+        <details>
+          <summary>Example (headings grouping selector)</summary>
+          <pre>
+        <code class="css">h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}</code></pre>
+        </details>
+
+      </li>
+      <li>Set the <code class="css">header</code> to have <code class="css">padding</code> and a
+        <code class="css">background-color</code> using your selected colors for the site.
+        <details>
+          <summary>Example (header selector)</summary>
+          <pre><code class="css">header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}</code></pre>
+        </details>
+      </li>
+      <li>Give the paragraphs appropriate padding.
+        <details>
+          <summary>Example (p selector)</summary>
+          <pre><code class="css">p {
+  padding: 25px;
+}</code></pre>
+        </details>
+      </li>
+      <li>Use the following CSS as a starting point to provide some style and presentation to the
+        <code>&lt;nav&gt;</code> element in the <strong>Navigation</strong> plan and to its anchor
+        tag children accounting for .
+        <details>
+          <summary>Example (nav selector and anchor tag children)</summary>
+          <pre><code class="css">nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}</code></pre>
+          <div class="callout info">
+            Notice the colon : used on the anchor tag selectors <code class="css">a:hover</code>.
+            This is a pseudo-class selector. It is used to select elements based on a state of the
+            element. In this case, the anchor tag is in the hover state (when a user passes their
+            mouse over the anchor tag). We will talk about basic <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+              target="_blank">pseudo-class</a> selectors in upcoming activities.
+          </div>
+        </details>
+      </li>
+    </ol>
+    <a href="images/finished-plan.png">Click here to see an example of a finished site plan</a>
+    <h4 class="step">Testing</h4>
+    <ol>
+      <li>Test your work continuously as you work through the steps by having your page loaded in
+        your local browser using <strong>Live Server</strong>. You do <strong>NOT</strong> need to
+        be on the internet while developing your pages.</li>
+      <li>Enter your GitHub username using this <a href="../grader/w02-project-siteplan.html"
+          target="_blank">W02: Project Site Plan Evaluation</a> tool to verify that you have the
+        basic, required HTML document content.</li>
+      <li><strong>Validate</strong> and correct any errors with your ☑️HTML and ☑️CSS using the <a
+          href="../week01/setup-webdev-extension.html" target="_blank">Web Developer</a> browser
+        extension under
+        Tools and Validate Local HTML and CSS.</li>
+    </ol>
+
+
+    <h3>Submission</h3>
+    <ol>
+
+      <li>When you are finished, commit your changes and push them to your wdd130 GitHub Pages
+        repository.</li>
+      <li>Submit the site plan URL (web address) in I-Learn. The URL will look
+        something like this:
+        <pre><code class="html">https://githubusername.github.io/wdd130/wwr/site-plan-rafting.html</code></pre>
+      </li>
+    </ol>
+  </main>
+  <footer>
+    <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>
